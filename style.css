@@ -41,3 +41,10 @@ p {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+img {
+  max-width: 100%;    /* Prevents the image from being wider than the page */
+  height: auto;        /* Keeps the image proportions perfect so it doesn't stretch */
+  display: block;      /* Allows centering and removes weird bottom spacing */
+  margin: 20px auto;   /* Centers the image horizontally and adds top/bottom space */
+  border-radius: 12px; /* Optional: Rounds the image corners to match your page */
+}
