@@ -209,6 +209,33 @@ img {
   color: navy;
 }
 
+/* Footer Container Styles */
+.site-footer {
+  margin-top: 60px; /* Pushes the footer away from the content above it */
+  padding: 20px 0 10px;
+  border-top: 1px solid #eeeeee; /* Creates a clean separation line */
+}
+
+/* Style the footer text specifically */
+.site-footer p {
+  font-size: 13px;
+  color: #777777;
+  margin-bottom: 10px;
+}
+
+/* Footer Link Layout */
+.footer-links a {
+  color: navy;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Adds a nice hover effect */
+}
+
+
 
 
 
