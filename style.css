@@ -17,7 +17,7 @@ body {
   
   /* ADD THESE TWO LINES */
   margin: 100px; /* This creates a 20px gap outside the border */
-  height: calc(100% - 40px); /* This accounts for the top and bottom margins */
+  height: calc(100% - 100px); /* This accounts for the top and bottom margins */
 
     /* ADD THIS LINE */
   border-radius: 25px; /* This rounds the corners of your border */
