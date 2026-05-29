@@ -235,6 +235,25 @@ img {
   text-decoration: underline; /* Adds a nice hover effect */
 }
 
+.callout-box {
+  background-color: #fff3cd; /* Warm alert yellow */
+  border-left: 5px solid #ffc107;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 4px 12px 12px 4px;
+  text-align: left;
+  max-width: 600px;
+}
+.callout-box h3 {
+  margin: 0 0 5px 0;
+  color: #856404;
+}
+.callout-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #856404;
+  text-align: left;
+}
 
 
 
