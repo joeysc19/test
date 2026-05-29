@@ -14,7 +14,7 @@ body {
   font-family: Arial, sans-serif;
   border: 2px solid navy; 
   border-radius: 25px;
-  background-color: red; /* This keeps the inside of your frame clean white */
+  background-color: white; /* This keeps the inside of your frame clean white */
   
   /* 2. This allows the border to stretch downward automatically */
   margin: 20px; 
