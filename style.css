@@ -2,24 +2,34 @@
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+/* 1. Change this so the background doesn't cut off */
+html {
+  background-color: lightblue; 
   height: 100%;
 }
 
 body {
-  background-color: lightblue;
+  /* 2. Remove the old height and background-color lines from here */
   padding: 40px; 
   text-align: center;
   font-family: Arial, sans-serif;
-  border: 2px solid navy; 
+  border: 15px solid navy; 
+  border-radius: 25px;
+  background-color: white; /* Optional: Making the inside white looks great with a frame! */
+  
+  /* 3. ADD THESE LINES FOR THE AUTOMATIC STRETCH */
   margin: 20px; 
   min-height: calc(100% - 40px); /* Keeps it full-screen at minimum, but allows growing */
   display: flow-root; /* Fixes layout spacing bugs with margins */
-  border-radius: 25px; /* This rounds the corners of your border */
 }
 
+img {
+  max-width: 100%;    
+  height: auto;        
+  display: block;      
+  margin: 20px auto;   
+  border-radius: 12px; 
+}
 
 h1 {
   color: navy;
@@ -28,21 +38,4 @@ h1 {
 p {
   font-size: 18px;
   color: #333333;
-}
-
-.card {
-  background-color: white;
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-img {
-  max-width: 100%;    /* Prevents the image from being wider than the page */
-  height: auto;        /* Keeps the image proportions perfect so it doesn't stretch */
-  display: block;      /* Allows centering and removes weird bottom spacing */
-  margin: 20px auto;   /* Centers the image horizontally and adds top/bottom space */
-  border-radius: 12px; /* Optional: Rounds the image corners to match your page */
 }
