@@ -3,10 +3,16 @@
 }
 
 body {
+body {
   background-color: lightblue;
-  padding: 100px 100px;
+  padding: 40px; /* Reduced from 100px */
   text-align: center;
   font-family: Arial, sans-serif;
+  border: 10px solid navy; 
+  min-height: 100vh; 
+  margin: 0; /* Ensures the body touches the screen edge */
+}
+
   
   /* Add these two lines for the border */
   border: 10px solid navy; 
