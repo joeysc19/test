@@ -23,6 +23,11 @@ body {
   border-radius: 25px; /* This rounds the corners of your border */
 }
 
+  /* 3. ADD THESE LINES FOR THE AUTOMATIC STRETCH */
+  margin: 20px; 
+  min-height: calc(100% - 40px); /* Keeps it full-screen at minimum, but allows growing */
+  display: flow-root; /* Fixes layout spacing bugs with margins */
+
 h1 {
   color: navy;
 }
