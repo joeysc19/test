@@ -2,31 +2,25 @@
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+/* 1. Set background color here so it stays blue when you scroll down */
+html {
+  background-color: lightblue;
   height: 100%;
 }
 
 body {
-  background-color: lightblue;
   padding: 40px; 
   text-align: center;
   font-family: Arial, sans-serif;
   border: 2px solid navy; 
+  border-radius: 25px;
+  background-color: white; /* This keeps the inside of your frame clean white */
   
-  /* ADD THESE TWO LINES */
-  margin: 100px; /* This creates a 20px gap outside the border */
-  height: calc(100% - 10%); /* This accounts for the top and bottom margins */
-
-    /* ADD THIS LINE */
-  border-radius: 25px; /* This rounds the corners of your border */
-}
-
-  /* 3. ADD THESE LINES FOR THE AUTOMATIC STRETCH */
+  /* 2. This allows the border to stretch downward automatically */
   margin: 20px; 
-  min-height: calc(100% - 40px); /* Keeps it full-screen at minimum, but allows growing */
-  display: flow-root; /* Fixes layout spacing bugs with margins */
+  min-height: calc(100% - 40px); 
+  display: flow-root; 
+}
 
 h1 {
   color: navy;
@@ -47,9 +41,9 @@ p {
 }
 
 img {
-  max-width: 100%;    /* Prevents the image from being wider than the page */
-  height: auto;        /* Keeps the image proportions perfect so it doesn't stretch */
-  display: block;      /* Allows centering and removes weird bottom spacing */
-  margin: 20px auto;   /* Centers the image horizontally and adds top/bottom space */
-  border-radius: 12px; /* Optional: Rounds the image corners to match your page */
+  max-width: 100%;    
+  height: auto;        
+  display: block;      
+  margin: 20px auto;   
+  border-radius: 12px; 
 }
