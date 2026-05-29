@@ -255,6 +255,32 @@ img {
   text-align: left;
 }
 
+/* Contact Button Styles */
+.contact-btn {
+  display: inline-block;
+  background-color: navy;
+  color: white;
+  text-decoration: none; /* Removes the default hyperlink underline */
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 30px; /* Gives it a modern, rounded pill shape */
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Makes the hover animation smooth */
+}
+
+/* Hover Effect */
+.contact-btn:hover {
+  background-color: #000055; /* Darkens the button slightly */
+  transform: translateY(-2px); /* Makes the button lift up slightly */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deepens the shadow on hover */
+}
+
+/* Active Click Effect */
+.contact-btn:active {
+  transform: translateY(0); /* Pushes the button back down when clicked */
+}
 
 
 
