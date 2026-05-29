@@ -186,6 +186,30 @@ img {
   color: white;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+.nav-logo {
+  font-weight: 700;
+  color: navy;
+  text-decoration: none;
+}
+.nav-links a {
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+.nav-links a:hover {
+  color: navy;
+}
+
+
 
 
 
