@@ -171,5 +171,21 @@ img {
   border-radius: 0; /* Keeps images flush inside the container border */
 }
 
+.info-table {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+.info-table th, .info-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+.info-table th {
+  background-color: navy;
+  color: white;
+}
+
+
 
 
