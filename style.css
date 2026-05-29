@@ -14,13 +14,17 @@ body {
   font-family: Arial, sans-serif;
   border: 2px solid navy; 
   border-radius: 25px;
-  background-color: white; /* This keeps the inside of your frame clean white */
+  background-color: white; 
   
-  /* 2. This allows the border to stretch downward automatically */
-  margin: 20px; 
+  /* These are the updated and new lines */
+  max-width: 800px;  /* This makes the frame smaller */
+  margin: 20px auto; /* This keeps it centered */
+  
+  /* Keep these lines so it still stretches */
   min-height: calc(100% - 40px); 
   display: flow-root; 
 }
+
 
 h1 {
   color: navy;
