@@ -1,12 +1,22 @@
+* {
+  box-sizing: border-box; /* Prevents the border from causing scrollbars */
+}
+
 body {
   background-color: lightblue;
   padding: 100px 100px;
   text-align: center;
   font-family: Arial, sans-serif;
+  
+  /* Add these two lines for the border */
+  border: 10px solid navy; 
+  min-height: 100vh; /* Keeps the border tall even if you have little text */
 }
+
 h1 {
   color: navy;
 }
+
 p {
   font-size: 18px;
   color: #333333;
