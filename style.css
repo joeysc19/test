@@ -1,21 +1,21 @@
 * {
-  box-sizing: border-box; /* Prevents the border from causing scrollbars */
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 body {
   background-color: lightblue;
-  padding: 40px; /* Reduced from 100px */
+  padding: 40px; 
   text-align: center;
   font-family: Arial, sans-serif;
-  border: 10px solid navy; 
-  min-height: 100vh; 
-  margin: 0; /* Ensures the body touches the screen edge */
-}
-
   
-  /* Add these two lines for the border */
-  border: 10px solid navy; 
-  min-height: 100vh; /* Keeps the border tall even if you have little text */
+  /* This creates a highly visible, thick navy border */
+  border: 15px solid navy; 
 }
 
 h1 {
