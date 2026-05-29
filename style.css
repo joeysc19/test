@@ -166,7 +166,7 @@ img {
 .carousel-item img {
   width: 100%;
   height: 300px;
-  object-fit: cover; /* Keeps image ratios clean without stretching */
+  object-fit: contain; /* will force the entire image to stay perfectly visible. */
   margin: 0; /* Clears out your previous global image margins */
   border-radius: 0; /* Keeps images flush inside the container border */
 }
