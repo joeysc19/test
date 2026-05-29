@@ -51,3 +51,18 @@ img {
   margin: 20px auto;   
   border-radius: 12px; 
 }
+
+.btn {
+  background-color: navy;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.btn:hover {
+  background-color: #000055; /* Darkens slightly when hovered */
+}
+
