@@ -9,21 +9,21 @@ html {
 }
 
 body {
+  /* THESE LAYOUT RULES STAY EXACTLY THE SAME */
   padding: 40px; 
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
   border: 2px solid navy; 
   border-radius: 25px;
   background-color: white; 
-  
-  /* These are the updated and new lines */
-  max-width: 800px;  /* This makes the frame smaller */
-  margin: 20px auto; /* This keeps it centered */
-  
-  /* Keep these lines so it still stretches */
+  max-width: 800px;  
+  margin: 20px auto; 
   min-height: calc(100% - 40px); 
   display: flow-root; 
+
+  /* ONLY THIS LINE CHANGES */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
 }
+
 
 
 h1 {
