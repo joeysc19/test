@@ -66,3 +66,70 @@ img {
   background-color: #000055; /* Darkens slightly when hovered */
 }
 
+/* Container for the flip effect */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  perspective: 1000px; /* Essential for the 3D depth effect */
+  margin: 40px auto;
+}
+
+/* This inner box holds the 3D space and handles the actual flip */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s; /* Controls how fast the flip happens */
+  transform-style: preserve-3d;
+}
+
+/* The magic animation: flips the inner container when hovered */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Base styles for both front and back faces */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safely hides the reverse side */
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Style the front face */
+.flip-card-front {
+  background-color: #bbb;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Forces the image to fill the card bounds nicely */
+  margin: 0;
+}
+
+/* Style the back face */
+.flip-card-back {
+  background-color: navy;
+  color: white;
+  transform: rotateY(180deg); /* Starts flipped so it shows upright later */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-back h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+
