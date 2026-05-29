@@ -13,9 +13,11 @@ body {
   padding: 40px; 
   text-align: center;
   font-family: Arial, sans-serif;
-  
-  /* This creates a highly visible, thick navy border */
   border: 15px solid navy; 
+  
+  /* ADD THESE TWO LINES */
+  margin: 20px; /* This creates a 20px gap outside the border */
+  height: calc(100% - 40px); /* This accounts for the top and bottom margins */
 }
 
 h1 {
