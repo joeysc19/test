@@ -132,4 +132,44 @@ img {
   margin-bottom: 10px;
 }
 
+/* Outer window frame of the carousel */
+.carousel-container {
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden; /* Hides images that are outside the current view */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* The actual scrollable row holding the images */
+.carousel {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Forces images to "snap" perfectly into place */
+  scroll-behavior: smooth;
+  
+  /* Hides the ugly scrollbar on most modern browsers */
+  scrollbar-width: none; 
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Hides scrollbar on Safari and Chrome */
+}
+
+/* Individual slide controls */
+.carousel-item {
+  flex: 0 0 100%; /* Makes each slide exactly 100% width of the container */
+  width: 100%;
+  scroll-snap-align: start; /* Tells the browser exactly where to snap the image */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Keeps image ratios clean without stretching */
+  margin: 0; /* Clears out your previous global image margins */
+  border-radius: 0; /* Keeps images flush inside the container border */
+}
+
+
 
